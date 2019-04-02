@@ -1,0 +1,12 @@
+extends Menu
+
+block content
+		p #{mensaje}
+		form(id="nuevaRecetaForm" action="/eliminaReceta/eliminar" method="post")
+			p
+				label(for="nombreRecetaEliminar") Elimina recetas que incluyan el siguiente texto:
+			p
+				input(id="nombreRecetaEliminar" type ="text" name="nombre")
+			p
+				input(type="submit" value="Eliminar")
+				input(type="hidden" name="metodo" value="delete")

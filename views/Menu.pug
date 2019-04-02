@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title RECETAS
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		
+	body
+		h1(id="titulo")= Titulo
+		div(class="menu")
+			ul(class="desplegable")
+				li
+					a(href="/nuevaReceta") Nueva Receta
+				li
+					a(href="/eliminaReceta")  Elimina Receta
+				li
+					a(href="/guiaRecetas")  Listado Recetas
+		p(id="checking") #{mensaje}
+		block content

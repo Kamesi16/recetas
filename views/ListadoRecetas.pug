@@ -1,0 +1,24 @@
+extends Menu
+
+block content
+	
+	h2 Selecciona la receta a modificar:
+	if registros
+		form(id="seleccionaRecetaForm" action="/seleccionaReceta" method="post")
+			p
+				select(name="nombresRecetas" form="seleccionaRecetaForm")
+					each registro in registros
+						option(value=registro.id_receta) #{registro.nombre}
+			p
+				input(type="submit" value="Muestra Receta")
+	if registros2
+		form(id="seleccionaRecetaForm" action="/seleccionaReceta" method="post")
+				form(id="nuevaRecetaForm" action="/nuevaReceta" method="post")
+			p
+				label(for="nombreReceta") Nombre:
+				input(id="nombreReceta" type ="text" name="nombre")
+			p
+				label(for="descReceta") Receta:
+				input(id="descReceta" type ="text" name="descripcion")
+			p
+				input(type="submit" value="Publicar")

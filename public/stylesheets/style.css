@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #BFC9CA;
+}
+
+#titulo{
+	text-align: center;
+	color: blue;
+}
+
+#datos{
+	font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #4813C2;
+}
+
+.menu {
+	margin:0.5em  auto 1em;
+	width:55%;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+.cuadro{
+	width: 50%;
+	margin: auto;
+	border: 5px;
+	border-radius: 8px;
+	background-color: bisque;
+	border-style: solid;
+}
+
+#checking{
+	text-align: center;
+	color: red;
+}
+
+.desplegable li a {
+	font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+	float:left;
+	background-color:#000000;
+	color:#ffffff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+ul {
+	list-style:none;
+}	
+
+label:hover{
+	color:orange;
+}
+label:hover ~ label {
+  color: orange;
+}

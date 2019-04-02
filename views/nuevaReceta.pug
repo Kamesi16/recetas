@@ -1,0 +1,12 @@
+extends Menu
+
+block content
+		form(id="nuevaRecetaForm" action="/nuevaReceta" method="post")
+			p
+				label(for="nombreReceta") Nombre:
+				input(id="nombreReceta" type ="text" name="nombre")
+			p
+				label(for="descReceta") Receta:
+				input(id="descReceta" type ="text" name="descripcion")
+			p
+				input(type="submit" value="Publicar")
